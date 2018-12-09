@@ -1,4 +1,4 @@
-class AddNotificationModel < ActiveRecord::Migration[5.1]
+class AddNotificationModel < ActiveRecord::Migration[4.2][5.1]
   def change
     Notification.joins(:event).where("events.kind": :reaction_created).where("events.created_at > ?", 30.days.ago).each do |n|
       next unless n.eventable

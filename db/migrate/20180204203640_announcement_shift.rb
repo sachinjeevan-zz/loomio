@@ -1,4 +1,4 @@
-class AnnouncementShift < ActiveRecord::Migration[5.1]
+class AnnouncementShift < ActiveRecord::Migration[4.2][5.1]
   def change
     remove_column :announcements, :kind, :string
     remove_column :announcements, :announceable_id, :integer

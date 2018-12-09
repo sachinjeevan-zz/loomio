@@ -1,4 +1,4 @@
-class RemoveLowReadIndexes < ActiveRecord::Migration[5.1]
+class RemoveLowReadIndexes < ActiveRecord::Migration[4.2][5.1]
   def change
     remove_index :versions,           name: :index_versions_on_whodunnit
     remove_index :notifications,      name: :index_notifications_on_created_at

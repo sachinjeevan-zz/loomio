@@ -1,4 +1,4 @@
-class UpdateUndecidedCountForActivePolls < ActiveRecord::Migration[5.1]
+class UpdateUndecidedCountForActivePolls < ActiveRecord::Migration[4.2][5.1]
   class UpdateUndecidedCountJob
     def perform
       Poll.reset_column_information

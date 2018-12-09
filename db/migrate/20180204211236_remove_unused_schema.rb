@@ -1,4 +1,4 @@
-class RemoveUnusedSchema < ActiveRecord::Migration[5.1]
+class RemoveUnusedSchema < ActiveRecord::Migration[4.2][5.1]
   def change
     remove_column :discussion_readers, :read_salient_items_count
     remove_column :discussion_readers, :read_items_count

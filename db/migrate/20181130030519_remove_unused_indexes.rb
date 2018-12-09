@@ -1,4 +1,4 @@
-class RemoveUnusedIndexes < ActiveRecord::Migration[5.1]
+class RemoveUnusedIndexes < ActiveRecord::Migration[4.2][5.1]
   def change
     remove_index :discussion_readers, name: :index_discussion_readers_on_participating
     remove_index :discussion_readers, name: :index_discussion_readers_on_volume

@@ -1,4 +1,4 @@
-class BackfillForkedFix < ActiveRecord::Migration[5.1]
+class BackfillForkedFix < ActiveRecord::Migration[4.2][5.1]
   def change
     forked       = Event.where(kind: :discussion_forked)
     forked_items = Event.where(id: forked.map { |e| e.custom_fields['item_ids'] }.flatten)

@@ -1,4 +1,4 @@
-class PopulateShareableLinks < ActiveRecord::Migration[5.1]
+class PopulateShareableLinks < ActiveRecord::Migration[4.2][5.1]
   def change
     Group.connection.execute("
       UPDATE groups SET token = invitations.token

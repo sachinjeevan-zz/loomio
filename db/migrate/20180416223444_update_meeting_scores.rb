@@ -1,4 +1,4 @@
-class UpdateMeetingScores < ActiveRecord::Migration[5.1]
+class UpdateMeetingScores < ActiveRecord::Migration[4.2][5.1]
   def change
     StanceChoice.joins(:poll)
       .where("polls.poll_type": :meeting)

@@ -1,4 +1,4 @@
-class RemoveUnusedSchemaGdpr < ActiveRecord::Migration[5.1]
+class RemoveUnusedSchemaGdpr < ActiveRecord::Migration[4.2][5.1]
   def change
     remove_column :comments, :liker_ids_and_names
     drop_table    :contact_messages

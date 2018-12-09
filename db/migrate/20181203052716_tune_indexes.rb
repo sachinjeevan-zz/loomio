@@ -1,4 +1,4 @@
-class TuneIndexes < ActiveRecord::Migration[5.1]
+class TuneIndexes < ActiveRecord::Migration[4.2][5.1]
   def change
     remove_index :memberships, name: :active_memberships
     remove_column :memberships, :is_suspended
